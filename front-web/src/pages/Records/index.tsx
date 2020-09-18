@@ -8,6 +8,9 @@ import Filters from '../../components/Filters';
 
 const BASE_URL = 'https://sds1-turco.herokuapp.com';
 
+const links = ["/create", "/charts"];
+const linksText = ["NOVO CADASTRO", "VER GRÁFICOS"];
+
 const Records = () => {
 
     const [recordsResponse, setRecordsResponse] = useState<RecordsResponse>();
@@ -24,7 +27,7 @@ const Records = () => {
 
     return (
         <div className="page-container">
-            <Filters link="/charts" linkText="VER GRÁFICO"/>
+            <Filters links={links} linksText={linksText}/>
             <table className="records-table" cellPadding="0" cellSpacing="0">
                 <thead>
                     <tr>

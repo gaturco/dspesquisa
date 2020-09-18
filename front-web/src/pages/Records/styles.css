@@ -98,6 +98,7 @@
 .filters-container .action-filters {
     background-color: var(--color-turquoise);
     color: #0E1B28;
+    margin-right: 10px;
 }
 
 .filters-container .action-filters:hover {

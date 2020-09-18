@@ -21,6 +21,9 @@ const initialPieData = {
     series: []
 }
 
+const links = ['/records'];
+const linkstext = ['VER TABELA']
+
 const BASE_URL = 'https://sds1-turco.herokuapp.com';
 
 const Charts = () => {
@@ -49,7 +52,7 @@ const Charts = () => {
 
     return (
         <div className="page-container">
-            <Filters link="/records" linkText="VER TABELA" />
+            <Filters links={links} linksText={linkstext} />
             <div className="chart-container">
                 <div className="top-related">
                     <h1 className="top-related-title">

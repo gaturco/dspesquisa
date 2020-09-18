@@ -1,0 +1,33 @@
+.platform-card-active,
+.platform-card-inactive {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 30%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.platform-card-active {
+    background-color: #FAD7C8;
+}
+
+.platform-card-inactive {
+    background-color: #FFF;
+}
+
+.platform-card-text-active,
+.platform-card-text-inactive {
+    margin-top: 40px;
+    font-size: 24px;
+    text-align: center;
+}
+.platform-card-active {
+    color: #ED7947;
+}
+
+.platform-card-inactive {
+    color: #9E9E9E;
+}

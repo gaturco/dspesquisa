@@ -2,17 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 type Props = {
-    link: string;
-    linkText: string;
+    links: string[];
+    linksText: string[];
 }
 
-const Filters = ({ link, linkText }: Props) => (
+const Filters = ({ links, linksText }: Props) => (
     <div className="filters-container records-actions">
-        <Link to={link}>
-            <button className="action-filters">
-                {linkText}
-            </button>
-        </Link>
+        {links?.map((link, index) => (
+            <Link key={index} to={link}>
+                <button className="action-filters">
+                    {linksText[index]}
+                </button>
+            </Link>
+        ))}
     </div>
 );
 
