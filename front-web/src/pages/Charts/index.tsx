@@ -45,7 +45,7 @@ const Charts = () => {
         }
 
         getData();
-    })
+    }, [])
 
     return (
         <div className="page-container">
